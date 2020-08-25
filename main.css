@@ -1,0 +1,10 @@
+body {
+    font-family: 'Schoolbell', cursive;
+}
+
+.jumbotron {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
