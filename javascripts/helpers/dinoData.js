@@ -144,4 +144,8 @@ const dinos = [
     }
   ];
 
-  
+  const kennel = [];
+  const hospital = [];
+  const graveyard = [];
+
+export { dinos, adventures, kennel, hospital, graveyard }
