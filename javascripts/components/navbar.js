@@ -9,8 +9,11 @@ const navigation = () => {
     </div>`)
 };
 
+
 const addDinoButton = () => {
-    $('#add-dino').on("click", dinoForm);
+    $('#add-dino').on("click", () => {
+        dinoForm();
+});
 };
 
 const dinoForm = () => {
@@ -41,4 +44,4 @@ const dinoForm = () => {
     `)
 }
 
-export { navigation, dinoForm, addDinoButton }
+export { navigation, addDinoButton }
