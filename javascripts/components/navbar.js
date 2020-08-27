@@ -1,3 +1,5 @@
+import { addDino, makeDinoCard } from "./dinoCard.js"
+
 const navigation = () => {
     $('#navbar').html(`
     <div class="jumbotron">
@@ -17,8 +19,8 @@ const addDinoButton = () => {
 };
 
 const dinoForm = () => {
-    $('#dinoFormDOM').html(`
-    <form>
+    const createDinoForm =
+    `<form>
     <div class="form-group">
       <label for="formGroupExampleInput">Dino name:</label>
       <input type="text" class="form-control" id="dinoName" aria-describedby="emailHelp">
@@ -40,8 +42,22 @@ const dinoForm = () => {
       <input type="text" class="form-control" id="dinoImage" aria-describedby="emailHelp">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-    `)
+  </form>`;
+
+  $('#dinoFormDOM').append(createDinoForm);
+
+  $('#submit').click(function (e) {
+    e.preventDefault()
+    const name = $('#dinoName').val();
+    const age = $('#dinoAge').val();
+    const type = $('#dinoType').val();
+    const owner = $('#dinoOwner').val();
+    const image = $('#dinoImage').val();
+    if (name != undefined && age != undefined && type != undefined && owner != undefined && image != undefined) {
+      addDino(dinos)
+    }
+  })
+makeDinoCard();
 }
 
 export { navigation, addDinoButton }

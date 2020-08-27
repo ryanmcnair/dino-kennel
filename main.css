@@ -1,5 +1,5 @@
 body {
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Pangolin', cursive;
 }
 
 .jumbotron {
@@ -14,4 +14,17 @@ body {
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
+}
+
+#kennel {
+    display: flex;
+    text-align: center;
+}
+
+#hospital {
+    text-align: center;
+}
+
+#graveyard {
+    text-align: center;
 }
