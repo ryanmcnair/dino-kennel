@@ -60,4 +60,4 @@ const dinoForm = () => {
 makeDinoCard();
 }
 
-export { navigation, addDinoButton }
+export { navigation, addDinoButton, dinoForm }
