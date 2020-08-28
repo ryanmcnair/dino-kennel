@@ -1,11 +1,9 @@
-import { navigation, addDinoButton, dinoForm } from "./javascripts/components/navbar.js"
-import { makeDinoCard } from "./javascripts/components/dinoCard.js";
+import { dinos } from "./javascripts/helpers/dinoData.js"
+import { printDinoCards } from "./javascripts/components/printDinoCard.js"
+import { addDinoButton } from "./javascripts/components/navbar.js"
 
 const init = () => {
-    navigation();
-    addDinoButton();
-    makeDinoCard();
-    
+    printDinoCards(dinos);
 };
 
 init ();

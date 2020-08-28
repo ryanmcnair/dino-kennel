@@ -9,6 +9,11 @@ body {
     margin-right: 25%;
 }
 
+#dinoCard {
+    display: flex;
+    justify-content: space-around;
+}
+
 #dinoFormDOM {
     text-align: center;
     width: 40%;
@@ -17,6 +22,10 @@ body {
 }
 
 #kennel {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: green;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -25,9 +34,25 @@ body {
 }
 
 #hospital {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }
 
 #graveyard {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }
