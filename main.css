@@ -1,5 +1,5 @@
 body {
-    font-family: 'Schoolbell', cursive;
+    font-family: 'Pangolin', cursive;
 }
 
 .jumbotron {
@@ -9,9 +9,50 @@ body {
     margin-right: 25%;
 }
 
+#dinoCard {
+    display: flex;
+    justify-content: space-around;
+}
+
 #dinoFormDOM {
     text-align: center;
     width: 40%;
     margin-left: 30%;
     margin-right: 30%;
+}
+
+#kennel {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#hospital {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+#graveyard {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
 }

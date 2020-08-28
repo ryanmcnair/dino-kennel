@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dino Kennel</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav id="navbar"></nav>
+    <nav id="navbar"><div class="jumbotron">
+        <h1 class="display-4">DINO KENNEL</h1>
+        <p class="lead">Drop off your dino by adding him to the kennel, clicking the button below. If your dino is good, feed her or give her a pet! Be sure to take good care of them or they'll end up in the graveyard.</p>
+        <hr class="my-4">
+        <p></p>
+        <a class="btn btn-warning btn-lg" role="button" id="add-dino">Add a dino!</a>
+    </div></nav>
     <div id="dinoFormDOM"></div>
     <div id="buttons"></div>
-    <div id="kennel"></div>
-    <div id="hospital"></div>
-    <div id="graveyard"></div>
+    <div id="kennel">
+        <h1>Kennel</h1>
+    </div>
+    <div id="hospital">
+        <h1>Hospital</h1>
+    </div>
+    <div id="graveyard">
+        <h1>Graveyard</h1>
+    </div>
 
     <script
     src="https://code.jquery.com/jquery-3.5.1.min.js"
