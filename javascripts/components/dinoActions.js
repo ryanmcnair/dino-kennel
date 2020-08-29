@@ -2,14 +2,14 @@ import { printDinoCards } from "./printDinoCard.js"
 
 const feedDino = (index, item, array) => {
     $(`#feed${index}`).click(() => {
-      item.health += 5;
+      item.health += 10;
       printDinoCards(array);
     });
   };
 
   const petDino = (index, item, array) => {
     $(`#pet${index}`).click(() => {
-      item.health += 5;
+      item.health += 10;
       printDinoCards(array);
     });
   };

@@ -1,7 +1,7 @@
 import { makeDino } from './dinoCard.js';
 import { feedDino, petDino, deleteDino } from './dinoActions.js';
 import { dinoForm } from './navbar.js';
-import { adventure, adventureLog } from './dinoAdventure.js'
+import { adventure, adventureModal } from './dinoAdventure.js'
 
 
 const printDinoCards = (array) => {
@@ -19,7 +19,7 @@ const printDinoCards = (array) => {
       feedDino(index, item, array)
       petDino(index, item, array)
       adventure(index, item, array)
-      adventureLog(item, index)
+      adventureModal(item, index)
       deleteDino(array, index)
       dinoForm();
     });

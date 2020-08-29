@@ -1,5 +1,6 @@
 body {
     font-family: 'Pangolin', cursive;
+    background-color: khaki;
 }
 
 .jumbotron {
@@ -7,6 +8,10 @@ body {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+}
+
+#navbar {
+    background-color: khaki;
 }
 
 #dinoCard {
@@ -33,6 +38,15 @@ body {
     margin-top: 10px;
 }
 
+#kennel-container {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    background-color: green;
+}
+
 #hospital {
     width: 80%;
     margin-right: 10%;
@@ -45,6 +59,15 @@ body {
     margin-top: 10px;
 }
 
+#hospital-container {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    background-color: yellow;
+}
+
 #graveyard {
     width: 80%;
     margin-right: 10%;
@@ -55,4 +78,17 @@ body {
     text-align: center;
     justify-content: space-evenly;
     margin-top: 10px;
+}
+
+#graveyard-container {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    background-color: gray;
+}
+
+#dinoModal {
+    background-color: lightpink;
 }
