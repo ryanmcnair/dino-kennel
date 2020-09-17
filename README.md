@@ -2,7 +2,7 @@
 
 ## Description
 
-This project showcases all the vanilla javascript we learned in the foundations milestones. It is designed to be a record keeping application for a dinosaur kennel.
+This project showcases the vanilla javascript we have learned in the foundations milestones. It is designed to be a record keeping application for a dinosaur kennel.
 
 ### Feature List
 
@@ -22,3 +22,7 @@ This project showcases all the vanilla javascript we learned in the foundations 
 - Your HTML and JS should all have proper indentations
 - You should be using ES6 modules
 - Your JS code should be formatted correctly!
+
+## Link to the deployed site
+
+[Dino Kennel](https://dino-kennel-rm.netlify.app/)
