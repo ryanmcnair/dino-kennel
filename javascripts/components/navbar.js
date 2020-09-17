@@ -1,75 +1,60 @@
-import { dinos } from '../helpers/dinoData.js'
+import { getDinos } from '../helpers/dinoData.js'
 import { printDinoCards } from  './printDinoCard.js'
 
-const navbar = () => {
-    $('#navbar').html(
-      `<div style="background:transparent !important" class="jumbotron">
-        <h1 class="display-4">DINO KENNEL</h1>
-        <p class="lead">Drop off your dino by adding her to the kennel, clicking the button below. If your dino is good, feed her or give her a pet! Be sure to take good care of them or they'll end up in the graveyard.</p>
-        <hr class="my-4">
-        <p></p>
-        <a class="btn btn-warning btn-lg" role="button" id="add-dino">Add a dino!</a>
-    </div>`
-    )
-}
-
-const addDinoButton = () => {
-  $('#add-dino').click((e) => {
-      e.preventDefault()
-      dinoForm();
-})
-}
-
-// $(document).ready(function () {
-//   #('#add-dino').click(function (){
-//     dinoForm();
-//   })
-// })
-
 const dinoForm = () => {
-    $('#dinoFormDOM').html(
-        `<form>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Dino name:</label>
-            <input type="text" class="form-control" id="dinoName" aria-describedby="emailHelp">
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Dino age:</label>
-            <input type="text" class="form-control" id="dinoAge" aria-describedby="emailHelp">
-          </div>
-         <div class="form-group">
-            <label for="formGroupExampleInput">Dino type:</label>
-            <input type="text" class="form-control" id="dinoType" aria-describedby="emailHelp">
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Owner:</label>
-            <input type="text" class="form-control" id="dinoOwner" aria-describedby="emailHelp">
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Image URL:</label>
-            <input type="text" class="form-control" id="dinoImage" aria-describedby="emailHelp">
-          </div>
-        <button type="submit-new" class="btn btn-primary">Submit</button>
-      </form>`)
-      
-      submitDinoForm();
-};
-
-const submitDinoForm = () => {
-  $('#submit-new').click(() => {
-    let newDino = {
-      name: $('#dinoName').val(),
-      type: $('#dinoType').val(),
-      age: $('#dinoAge').val(),
-      owner: $('#dinoOwner').val(),
-      adventures: [],
-      health: 100,
-      imageUrl: $('#dinoImage').val(),
-    };
-    dinos.push(newDino);
-    printDinoCards(dinos)
+  $('#add-dino').click(() => {
+    $('#dinoFormDOM').html(`
+            <form class="m-3">
+                <div class="row">
+                    <div class="col">
+                        <label for="inputName" style="color:black">Name</label>
+                        <input type="text reset" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                    <div class="col">
+                        <label for="inputType" style="color:black">Type</label>
+                        <input type="text" class="form-control" id="inputType" placeholder="Chicken">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAge" style="color:black">Age</label>
+                        <input type="text" class="form-control" id="inputAge" placeholder="12">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <label for="inputOwner" style="color:black">Owner</label>
+                        <input type="text" class="form-control" id="inputOwner" placeholder="Don Johnson">
+                    </div>
+                    <div class="col">
+                        <label for="inputImg" style="color:black">Image URL</label>
+                        <input type="url" class="form-control" id="inputImg" placeholder="https://">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button id="submitNewDino" class="btn btn-danger" type="button">Submit</button>
+                </div>
+            </form>
+        `);
+    
   });
 };
 
+const submitDinoForm = () => {
+  $('#submitNewDino').click(() => {
+    let newDino = {
+      name: $('#inputName').val(),
+      type: $('#inputType').val(),
+      age: $('#inputAge').val(),
+      owner: $('#inputOwner').val(),
+      adventures: [],
+      health: 100,
+      imageUrl: $('#inputImg').val(),
+    };
+    getDinos().push(newDino);
+    printDinoCards(getDinos());
+    document.getElementById("dinoFormDOM").reset();
+  });
+};
 
-export { addDinoButton, dinoForm, navbar }
+submitDinoForm();
+
+export { dinoForm };
