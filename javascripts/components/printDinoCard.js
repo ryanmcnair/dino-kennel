@@ -13,7 +13,7 @@ const printDinoCards = (array) => {
         $('#kennel').append(makeDino(item, index));
       } else if (item.health < 50 && item.health > 0) {
         $('#hospital').append(makeDino(item, index));
-      } else if (item.health === 0) {
+      } else {
         $('#graveyard').append(makeDino(item, index));
       }
       feedDino(index, item, array)

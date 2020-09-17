@@ -87,7 +87,7 @@ const dinos = [
       owner: 'Dr. T',
       adventures: [],
       health: 22,
-      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSoGE9acmuz8fTxtxCxQCTJCOQau3G5rwAnlw&usqp=CAU'
+      imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZCVzEeaDN5VWo2-01Wv_X9Z3J3UHcjK3eqA&usqp=CAU'
     }
   ];
 
@@ -144,4 +144,8 @@ const dinoAdventures = [
     },
 ];
 
-export { dinos, dinoAdventures }
+const getDinos = () => { 
+    return dinos;
+};
+
+export { dinos, dinoAdventures, getDinos };
